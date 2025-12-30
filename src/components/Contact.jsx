@@ -28,8 +28,8 @@ const Contact = () => {
     email: 'ashishpipaliya786@gmail.com',
     phone: '+91 63543 48235',
     location: 'India',
-    linkedin: 'https://linkedin.com/in/ashishpipaliya',
-    github: 'https://github.com/ashishpipaliya',
+    linkedin: 'https://www.linkedin.com/in/ashish-pipaliya-b0716730b/',
+    github: 'https://github.com/Its-Ashu',
   }
 
   return (

@@ -7,5 +7,5 @@ export default defineConfig({
   // For local development, use '/'
   // For GitHub Pages deployment, change this to '/your-repo-name/'
   // The BrowserRouter in App.jsx uses import.meta.env.BASE_URL to match this
-  base: '/',
+  base: '/Portfolio/',
 })
