@@ -38,7 +38,8 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     }
   }
 
-  const resumePath = '/AshishPipaliya_ReactNativeDev_Resume.pdf'
+  // Use BASE_URL for GitHub Pages compatibility
+  const resumePath = `${import.meta.env.BASE_URL}AshishPipaliya_ReactNativeDev_Resume.pdf`
 
   const downloadResume = () => {
     const link = document.createElement('a')
@@ -78,9 +79,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                 {link.name}
               </a>
             ))}
-            <Link to="/resume" className="btn-secondary text-sm">
-              View Resume
-            </Link>
             <button onClick={downloadResume} className="btn-primary text-sm">
               Download CV
             </button>
@@ -172,7 +170,11 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden pb-4 border-t border-gray-200 dark:border-gray-700 mt-2"
+            className={`md:hidden pb-4 border-t border-gray-200 dark:border-gray-700 mt-2 ${
+              isScrolled
+                ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md'
+                : 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm'
+            }`}
           >
             {navLinks.map(link => (
               <a
@@ -184,9 +186,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
                 {link.name}
               </a>
             ))}
-            <Link to="/resume" className="btn-secondary text-sm mt-2 w-full text-center block">
-              View Resume
-            </Link>
             <button onClick={downloadResume} className="btn-primary text-sm mt-2 w-full">
               Download CV
             </button>

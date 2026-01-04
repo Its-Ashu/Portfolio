@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import ProjectDetail from './pages/ProjectDetail'
 import ResumeViewer from './pages/ResumeViewer'
+import ScrollToTop from './pages/ScrollToTop'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -30,13 +31,14 @@ function App() {
 
   return (
     <BrowserRouter basename={basename}>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects/:slug" element={<ProjectDetail />} />
-            <Route path="/resume" element={<ResumeViewer />} />
+            <Route path="/resume" ele ment={<ResumeViewer />} />
           </Routes>
         </main>
         <Footer />

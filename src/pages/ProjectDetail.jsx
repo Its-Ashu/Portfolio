@@ -1,12 +1,27 @@
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useParams, Link, useNavigate, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { projects } from '../data/projects'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const ProjectDetail = () => {
   const { slug } = useParams()
   const navigate = useNavigate()
   const project = projects.find(p => p.slug === slug)
+
+  const [isOpen, setIsOpen] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const openLightbox = index => {
+    setCurrentIndex(index)
+    setIsOpen(true)
+  }
+
+  const closeLightbox = () => setIsOpen(false)
+
+  const nextImage = () => setCurrentIndex((currentIndex + 1) % project.screenshots.length)
+
+  const prevImage = () =>
+    setCurrentIndex((currentIndex - 1 + project.screenshots.length) % project.screenshots.length)
 
   useEffect(() => {
     if (!project) {
@@ -35,7 +50,7 @@ const ProjectDetail = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back Button */}
         <Link
-          to="/#projects"
+          to="/"
           className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mb-8 transition-colors"
         >
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,11 +71,54 @@ const ProjectDetail = () => {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="h-64 sm:h-96 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center shadow-lg">
-            <div className="text-8xl sm:text-9xl font-display font-bold text-white opacity-80">
-              {project.title.charAt(0)}
-            </div>
-          </div>
+          {(() => {
+            const backgroundColor = project.backgroundColor || null
+            const isLogo = project.isLogo || false
+            const backgroundStyle = backgroundColor
+              ? { backgroundColor }
+              : {
+                  background:
+                    'linear-gradient(to bottom right, rgb(56, 189, 248), rgb(37, 99, 235))',
+                }
+
+            return (
+              <div
+                className="h-64 sm:h-96 rounded-lg flex items-center justify-center shadow-lg overflow-hidden"
+                style={backgroundStyle}
+              >
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className={
+                      isLogo
+                        ? 'max-w-[50%] max-h-[50%] object-contain'
+                        : 'w-full h-full object-cover'
+                    }
+                    loading="lazy"
+                    onError={e => {
+                      // Fallback to gradient if image fails to load
+                      e.target.style.display = 'none'
+                      const parent = e.target.parentElement
+                      if (!backgroundColor) {
+                        parent.style.background =
+                          'linear-gradient(to bottom right, rgb(56, 189, 248), rgb(37, 99, 235))'
+                      }
+                      parent.innerHTML = `
+                        <div class="text-8xl sm:text-9xl font-display font-bold text-white opacity-80">
+                          ${project.title.charAt(0)}
+                        </div>
+                      `
+                    }}
+                  />
+                ) : (
+                  <div className="text-8xl sm:text-9xl font-display font-bold text-white opacity-80">
+                    {project.title.charAt(0)}
+                  </div>
+                )}
+              </div>
+            )
+          })()}
         </motion.div>
 
         {/* Project Header */}
@@ -167,6 +225,37 @@ const ProjectDetail = () => {
           </ul>
         </motion.section>
 
+        {/* Screenshots */}
+        {project?.screenshots && project?.screenshots?.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mb-12"
+          >
+            <h3 className="heading-3 mb-6 text-primary-600 dark:text-primary-400">
+              App Screenshots
+            </h3>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {project.screenshots.map((src, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  className="rounded-lg overflow-hidden shadow-md bg-gray-100 dark:bg-gray-800"
+                >
+                  <img
+                    src={src}
+                    alt={`Screenshot ${index + 1}`}
+                    className="w-50 h-50 object-contain cursor-pointer"
+                    onClick={() => openLightbox(index)}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+        )}
+
         {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -174,7 +263,8 @@ const ProjectDetail = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 mt-12"
         >
-          {project.githubUrl && (
+          {/* Only show GitHub link for personal projects */}
+          {project.githubUrl && project.category === 'personal' && (
             <a
               href={project.githubUrl}
               target="_blank"
@@ -211,6 +301,46 @@ const ProjectDetail = () => {
           )}
         </motion.div>
       </div>
+      {isOpen && (
+        <motion.div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          {/* Close */}
+          <button onClick={closeLightbox} className="absolute top-6 right-6 text-white text-3xl">
+            ✕
+          </button>
+
+          {/* Previous */}
+          <button onClick={prevImage} className="absolute left-6 text-white text-4xl">
+            ‹
+          </button>
+
+          {/* Image */}
+          <motion.img
+            key={currentIndex}
+            src={project.screenshots[currentIndex]}
+            className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -100, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={(e, info) => {
+              if (info.offset.x < -100) nextImage()
+              if (info.offset.x > 100) prevImage()
+            }}
+          />
+
+          {/* Next */}
+          <button onClick={nextImage} className="absolute right-6 text-white text-4xl">
+            ›
+          </button>
+        </motion.div>
+      )}
     </motion.div>
   )
 }

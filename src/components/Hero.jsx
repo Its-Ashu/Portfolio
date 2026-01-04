@@ -33,14 +33,23 @@ const Hero = () => {
           animate="visible"
           className="text-center max-w-4xl mx-auto"
         >
-          <motion.div
-            variants={itemVariants}
-            className="mb-6 flex justify-center"
-          >
-            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 shadow-lg">
-              <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl sm:text-5xl font-display font-bold text-primary-600 dark:text-primary-400">
-                AP
-              </div>
+          <motion.div variants={itemVariants} className="mb-6 flex justify-center">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 shadow-lg overflow-hidden">
+              <img
+                src="/profile-photo.jpg"
+                alt="Ashish Pipaliya"
+                className="w-full h-full object-cover rounded-full"
+                onError={e => {
+                  // Fallback to initials if image fails to load
+                  e.target.style.display = 'none'
+                  const parent = e.target.parentElement
+                  parent.innerHTML = `
+                    <div class="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl sm:text-5xl font-display font-bold text-primary-600 dark:text-primary-400">
+                      AP
+                    </div>
+                  `
+                }}
+              />
             </div>
           </motion.div>
 
@@ -62,32 +71,19 @@ const Hero = () => {
             variants={itemVariants}
             className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
           >
-            Full Stack Developer specializing in React Native, MERN stack, and
-            modern web technologies. Passionate about creating seamless user
-            experiences and scalable applications.
+            React Native Developer with over 2.5 years of experience building high-performance
+            mobile apps. I've developed 15+ projects, including well-known brands like GNC, Kalki,
+            Vilvah, and Bellavita.
           </motion.p>
 
           <motion.div
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Link
-              to="/resume"
-              className="btn-primary"
-            >
+            <Link to="/resume" className="btn-primary">
               View Resume
             </Link>
-            <a
-              href="/AshishPipaliya_ReactNativeDev_Resume.pdf"
-              download="AshishPipaliya_Resume.pdf"
-              className="btn-secondary"
-            >
-              Download CV
-            </a>
-            <a
-              href="#contact"
-              className="btn-secondary"
-            >
+            <a href="#contact" className="btn-secondary">
               Get In Touch
             </a>
           </motion.div>
@@ -98,4 +94,3 @@ const Hero = () => {
 }
 
 export default Hero
-

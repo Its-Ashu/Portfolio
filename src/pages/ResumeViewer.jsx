@@ -2,7 +2,8 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 const ResumeViewer = () => {
-  const resumePath = '/AshishPipaliya_ReactNativeDev_Resume.pdf'
+  // Use BASE_URL for GitHub Pages compatibility
+  const resumePath = `${import.meta.env.BASE_URL}AshishPipaliya_ReactNativeDev_Resume.pdf`
 
   return (
     <motion.div
@@ -84,4 +85,5 @@ const ResumeViewer = () => {
 }
 
 export default ResumeViewer
+
 
