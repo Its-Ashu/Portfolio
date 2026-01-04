@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 const ProjectCard = ({ project }) => {
   // Use project image or fallback to gradient with first letter
   const hasImage = project.image
-  const backgroundColor = project.backgroundColor || null
-  const isLogo = project.isLogo || false
+  const backgroundColor = project.backgroundColor ?? null
+  const isLogo = project.isLogo ?? false
 
   // Determine background style
   const backgroundStyle = backgroundColor

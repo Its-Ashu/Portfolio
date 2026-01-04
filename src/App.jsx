@@ -9,8 +9,8 @@ import ScrollToTop from './pages/ScrollToTop'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('darkMode')
-    return saved ? JSON.parse(saved) : false
+    const saved = localStorage.getItem('lightMode')
+    return saved ? JSON.parse(saved) : false // always false initially
   })
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects/:slug" element={<ProjectDetail />} />
-            <Route path="/resume" ele ment={<ResumeViewer />} />
+            <Route path="/resume" element={<ResumeViewer />} />
           </Routes>
         </main>
         <Footer />
