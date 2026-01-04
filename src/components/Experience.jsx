@@ -5,23 +5,26 @@ const Experience = () => {
     {
       title: 'React Native Developer',
       company: 'Dynamic Dreamz',
-      period: 'Aug 2024 - Current',
+      period: 'Aug 2024 – Present',
       description: [
-        'Improved app performance and UI/UX across 8+ major e-commerce brands using Appmaker (React Native)',
-        'Collaborated with cross-functional teams to deliver responsive and high-quality mobile apps',
-        'Worked on brands including GNC India, Bellavita Organic, Voyage Eyewear, and Kalki Fashion',
-        'Enhanced product filters, checkout flows, and app performance for better user experience',
+        'Working on Appmaker (React Native–based framework) to build and customize mobile applications for multiple large-scale e-commerce brands',
+        'Improved UI/UX, performance, and stability across 13+ production mobile apps',
+        'Implemented features such as product listing, advanced filters, cart, checkout flows, and payment integrations',
+        'Worked on brands including GNC India, Bellavita Organic, Bombay Shirt Company, and Kalki Fashion',
+        'Integrated third-party services and SDKs such as GoKwik and Zecpay',
+        'Collaborated with designers, backend teams, and QA to deliver high-quality releases',
       ],
     },
     {
-      title: 'Full-stack Developer',
+      title: 'Full Stack Developer',
       company: 'Sarvagya Softtech',
-      period: 'June 2023 - July 2024',
+      period: 'June 2023 – July 2024',
       description: [
-        'Built full-stack mobile applications integrating React Native frontend with Node.js and MongoDB backend',
-        'Designed user-friendly UI with optimized API performance and responsive layouts',
-        'Developed and deployed production-ready applications for various clients',
-        'Implemented RESTful APIs and database solutions for scalable mobile applications',
+        'Worked as a Full Stack Developer on real client and internal projects over a continuous 14-month period',
+        'Developed mobile applications using React Native with RESTful APIs',
+        'Built backend services using Node.js, Express, and MongoDB for authentication, data handling, and business logic',
+        'Designed and implemented clean, responsive UI/UX using Figma and modern frontend practices',
+        'Gained hands-on experience with Git-based version control, debugging, and API integration.',
       ],
     },
   ]
@@ -61,10 +64,7 @@ const Experience = () => {
               </div>
               <ul className="space-y-2">
                 {exp.description.map((item, idx) => (
-                  <li
-                    key={idx}
-                    className="text-gray-700 dark:text-gray-300 flex items-start"
-                  >
+                  <li key={idx} className="text-gray-700 dark:text-gray-300 flex items-start">
                     <span className="text-primary-500 mr-2 mt-1">•</span>
                     <span>{item}</span>
                   </li>
@@ -79,4 +79,3 @@ const Experience = () => {
 }
 
 export default Experience
-

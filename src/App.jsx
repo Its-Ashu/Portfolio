@@ -9,7 +9,7 @@ import ScrollToTop from './pages/ScrollToTop'
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
-    const saved = localStorage.getItem('lightMode')
+    const saved = localStorage.getItem('darkMode')
     return saved ? JSON.parse(saved) : false // always false initially
   })
 
