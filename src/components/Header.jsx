@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const Header = ({ darkMode, toggleDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,18 +24,25 @@ const Header = ({ darkMode, toggleDarkMode }) => {
   ]
 
   const handleNavClick = (e, href) => {
-    if (href.startsWith('#')) {
-      e.preventDefault()
-      if (location.pathname !== '/') {
-        // Navigate to home first, then scroll
-        window.location.href = `/${href}`
-      } else {
-        const element = document.querySelector(href)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' })
-        }
-      }
-      setIsMobileMenuOpen(false)
+    if (!href.startsWith('#')) return
+
+    e.preventDefault()
+    setIsMobileMenuOpen(false)
+
+    const targetId = href
+
+    if (location.pathname !== '/') {
+      // Navigate to home first
+      navigate('/')
+
+      // Wait for home to mount, then scroll
+      setTimeout(() => {
+        const el = document.querySelector(targetId)
+        el?.scrollIntoView({ behavior: 'instant' })
+      }, 100)
+    } else {
+      const el = document.querySelector(targetId)
+      el?.scrollIntoView({ behavior: 'instant' })
     }
   }
 

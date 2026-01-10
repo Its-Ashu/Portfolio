@@ -1,8 +1,8 @@
 export const projects = [
-  // Client Projects - Appmaker
+  // Client Projects - Appmaker.xyz
   {
     slug: 'gnc-india',
-    title: 'GNC India',
+    title: 'GNC',
     date: '2024',
     role: 'React Native Developer',
     category: 'client',
@@ -10,9 +10,9 @@ export const projects = [
     shortDescription:
       'E-commerce mobile app improvements for GNC India with better checkout flow and performance.',
     longDescription:
-      'Worked on improving the GNC India mobile application using Appmaker and React Native. The main focus was to make the app faster, smoother, and easier to use, especially during the checkout process. One-click checkout extensions like GoKwik and Zecpay were used to simplify payments while keeping the overall flow clean and user-friendly.',
+      'Worked on improving the GNC India mobile application using Appmaker.xyz and React Native. The main focus was to make the app faster, smoother, and easier to use, especially during the checkout process. One-click checkout extensions like GoKwik and Zecpay were used to simplify payments while keeping the overall flow clean and user-friendly.',
     techStack: [
-      'Appmaker',
+      'Appmaker.xyz',
       'React Native',
       'Expo',
       'GoKwik',
@@ -23,7 +23,7 @@ export const projects = [
       'Shopify Dashboard',
     ],
     highlights: [
-      'Worked on improving the mobile app using Appmaker and React Native',
+      'Worked on improving the mobile app using Appmaker.xyz and React Native',
       'Simplified checkout flow using one-click checkout extensions',
       'Improved app performance and reduced loading time',
       'Enhanced overall app stability and user experience',
@@ -54,6 +54,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStoreLink: 'https://play.google.com/store/apps/developer?id=GNC+India',
+    appStoreLink: 'https://apps.apple.com/in/app/gnc-india/id6473276654',
   },
   {
     slug: 'bombay-shirt',
@@ -65,14 +67,14 @@ export const projects = [
     shortDescription:
       'Worked on full app UI and functionality improvements for a premium fashion e-commerce brand.',
     longDescription:
-      'Worked extensively on the Bombay Shirt Company mobile app using Appmaker and React Native. The work involved fixing UI issues, improving app functionality, optimizing performance, and ensuring smooth user experience across the entire app including Home, PLP, PDP, Search, Cart, Checkout, Wishlist, and Profile screens.',
-    techStack: ['Appmaker', 'React Native', 'Expo', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
+      'Worked extensively on the Bombay Shirt Company mobile app using Appmaker.xyz and React Native. The work involved fixing UI issues, improving app functionality, optimizing performance, and ensuring smooth user experience across the entire app including Home, PLP, PDP, Search, Cart, Checkout, Wishlist, and Profile screens.',
+    techStack: ['Appmaker.xyz', 'React Native', 'Expo', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: [
       'Worked on UI and functionality fixes across the complete mobile application',
       'Improved PDP, PLP, Search, Wishlist, Cart, and Checkout user experience',
       'Fixed multiple critical bugs affecting cart, checkout, and reviews',
       'Optimized PDP blocks and webview performance',
-      'Worked closely with Appmaker team to debug SDK and build-related issues',
+      'Worked closely with Appmaker.xyz team to debug SDK and build-related issues',
     ],
     problem:
       'The app had multiple UI inconsistencies, functional bugs, and performance issues across different screens, which impacted user experience and stability.',
@@ -82,7 +84,7 @@ export const projects = [
       'Fixed cart, wishlist, checkout, and review-related functional issues',
       'Optimized PDP performance including related products and recommendations',
       'Worked on Expo builds, SDK updates, and release testing',
-      'Collaborated with backend, Appmaker, and third-party teams to resolve blockers',
+      'Collaborated with backend, Appmaker.xyz, and third-party teams to resolve blockers',
     ],
     result: [
       'Improved overall app stability and user experience',
@@ -102,6 +104,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.coffye.ndufju',
+    appStoreLink: 'https://apps.apple.com/in/app/bombay-shirt-company/id6444273632',
   },
   {
     slug: 'kalki',
@@ -113,8 +117,8 @@ export const projects = [
     shortDescription:
       'Worked on UI and functional fixes across the full Kalki Fashion e-commerce mobile app.',
     longDescription:
-      'Worked on improving the Kalki Fashion mobile app using Appmaker and React Native. The work mainly focused on fixing UI inconsistencies, resolving functional bugs, and improving overall stability across key screens such as Home, Search, Collection, Cart, Checkout, Wishlist, Account, and Navigation.',
-    techStack: ['Appmaker', 'React Native', 'Expo', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
+      'Worked on improving the Kalki Fashion mobile app using Appmaker.xyz and React Native. The work mainly focused on fixing UI inconsistencies, resolving functional bugs, and improving overall stability across key screens such as Home, Search, Collection, Cart, Checkout, Wishlist, Account, and Navigation.',
+    techStack: ['Appmaker.xyz', 'React Native', 'Expo', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: [
       'Worked on UI and functional issues across the entire application',
       'Fixed search, navigation, and collection page UX issues',
@@ -130,7 +134,7 @@ export const projects = [
       'Resolved navigation menu open/close and state-related issues',
       'Fixed cart, coupon application, and checkout calculation issues',
       'Debugged random crash scenarios and improved app stability',
-      'Worked closely with QA and Appmaker team to verify fixes',
+      'Worked closely with QA and Appmaker.xyz team to verify fixes',
     ],
     result: [
       'Improved overall app stability and user experience',
@@ -149,6 +153,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.shopgate.android.kalkifash',
+    appStoreLink: 'https://apps.apple.com/in/app/kalki-fashion-online-shopping/id950206786',
   },
   {
     slug: 'vilvah',
@@ -160,8 +166,8 @@ export const projects = [
     shortDescription:
       'Worked on UI fixes, functional improvements, and performance optimization across the Vilvah e-commerce app.',
     longDescription:
-      'Worked on the Vilvah mobile application using Appmaker and React Native, focusing on fixing UI inconsistencies, resolving functional issues, and improving performance across key screens such as Home, PLP, PDP, Search, Cart, and Checkout to ensure a smooth shopping experience.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+      'Worked on the Vilvah mobile application using Appmaker.xyz and React Native, focusing on fixing UI inconsistencies, resolving functional issues, and improving performance across key screens such as Home, PLP, PDP, Search, Cart, and Checkout to ensure a smooth shopping experience.',
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
     highlights: [
       'Fixed UI and layout issues across major shopping flows',
       'Resolved functional issues on PDP, Cart, and Checkout',
@@ -192,6 +198,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.vilvahstore',
+    appStore: 'https://apps.apple.com/in/app/vilvah-store-skin-hair-care/id1635766051',
   },
   {
     slug: 'voyage-eyewear',
@@ -204,7 +212,7 @@ export const projects = [
       'Improved UI stability, cart functionality, and performance for the Voyage Eyewear mobile app.',
     longDescription:
       'Worked on the Voyage Eyewear mobile app to fix UI issues, improve cart-related functionality, and optimize performance across Home, Product Listing, Product Detail, Search, and Cart screens.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
     highlights: [
       'Improved cart and product interaction behavior',
       'Fixed UI spacing and alignment issues',
@@ -234,6 +242,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.voyageyewear',
+    appStore: 'https://apps.apple.com/in/app/voyage-eyewear/id6446887573',
   },
   {
     slug: 'bellavita',
@@ -246,7 +256,7 @@ export const projects = [
       'Enhanced UI consistency, filters, and performance for the Bellavita Organic mobile app.',
     longDescription:
       'Worked on improving the Bellavita Organic app by fixing UI issues, improving filter behavior, enhancing cart handling, and optimizing performance across all major shopping screens.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
     highlights: [
       'Improved product filter behavior and UI',
       'Fixed cart and PDP-related issues',
@@ -275,6 +285,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.bellavita.shopifyapps',
+    appStore: 'https://apps.apple.com/in/app/bellavita-online-shopping-app/id1588406681',
   },
   {
     slug: 'house-of-masaba',
@@ -287,7 +299,7 @@ export const projects = [
       'Worked on UI refinements, functional fixes, and performance improvements for the fashion app.',
     longDescription:
       'Contributed to the House of Masaba mobile app by fixing UI issues, improving functional stability, and optimizing performance across product browsing, cart, and checkout screens.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
     highlights: [
       'Fixed UI inconsistencies across fashion product screens',
       'Improved cart and checkout behavior',
@@ -307,6 +319,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.coffye.tbwzxo',
+    appStore: 'https://apps.apple.com/in/app/masaba/id6737791042',
   },
   {
     slug: 'house-of-rare',
@@ -318,7 +332,7 @@ export const projects = [
     shortDescription: 'Improved UI stability and performance for the House of Rare e-commerce app.',
     longDescription:
       'Worked on fixing UI issues and improving performance across the House of Rare mobile app, ensuring smoother browsing and cart interactions.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
     highlights: [
       'Fixed UI and layout issues',
       'Improved browsing performance',
@@ -338,6 +352,9 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore:
+      'https://play.google.com/store/apps/details?id=rarerabbit.android.app&pcampaignid=web_share',
+    appStore: 'https://apps.apple.com/in/app/house-of-rare/id1563278819',
   },
   {
     slug: 'renee-cosmetics',
@@ -349,7 +366,7 @@ export const projects = [
     shortDescription: 'Worked on UI fixes, cart flow improvements, and performance optimization.',
     longDescription:
       'Improved the Renee Cosmetics mobile app by fixing UI issues, resolving cart and checkout problems, and optimizing performance across key shopping screens.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
     highlights: [
       'Fixed cart and checkout-related issues',
       'Improved UI consistency',
@@ -369,6 +386,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.coffye.sbzuof',
+    appStore: 'https://apps.apple.com/in/app/renee-cosmetics/id6449245534',
   },
   {
     slug: 'thriveco',
@@ -380,7 +399,7 @@ export const projects = [
     shortDescription: 'Improved UI reliability and performance for the ThriveCo wellness app.',
     longDescription:
       'Worked on UI and functional improvements across the ThriveCo mobile app, focusing on performance, stability, and smooth product browsing.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
     highlights: [
       'Fixed UI and functional issues',
       'Improved browsing performance',
@@ -400,6 +419,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=in.thriveco',
+    appStore: 'https://apps.apple.com/my/app/thriveco/id6479603171',
   },
   {
     slug: 'fashor',
@@ -411,7 +432,7 @@ export const projects = [
     shortDescription: 'Worked on UI fixes and performance optimization for the Fashor fashion app.',
     longDescription:
       'Contributed to the Fashor mobile app by fixing UI issues, improving functional behavior, and optimizing performance across shopping flows.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
     highlights: ['Resolved UI issues', 'Improved performance', 'Enhanced app usability'],
     problem: 'The app required UI and performance improvements.',
     approach: ['Fixed UI bugs', 'Optimized screen rendering'],
@@ -427,6 +448,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=co.tapcart.app.id_INu2PrmT53',
+    appStore: 'https://apps.apple.com/app/id1458834104',
   },
   {
     slug: 'super-tails',
@@ -438,7 +461,7 @@ export const projects = [
     shortDescription: 'Improved UI stability and performance for the Super Tails pet products app.',
     longDescription:
       'Worked on fixing UI and functional issues across the Super Tails mobile app, ensuring smoother browsing and cart interactions.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
     highlights: ['Fixed UI inconsistencies', 'Improved performance', 'Enhanced app stability'],
     problem: 'The app needed better UI reliability and performance.',
     approach: ['Resolved UI issues', 'Optimized app performance'],
@@ -454,6 +477,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.coffye.dqiabm',
+    appStore: 'https://apps.apple.com/in/app/supertails-online-pet-shop/id1670908360',
   },
   {
     slug: 'zouk',
@@ -465,7 +490,7 @@ export const projects = [
     shortDescription: 'Worked on UI fixes and performance optimization for the Zouk lifestyle app.',
     longDescription:
       'Contributed to the Zouk mobile app by fixing UI issues, improving functional stability, and optimizing performance across key screens.',
-    techStack: ['Appmaker', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
     highlights: [
       'Fixed UI and layout issues',
       'Improved app performance',
@@ -485,6 +510,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=co.shopney.zoukazjnmapp',
+    appStore: 'https://apps.apple.com/in/app/zouk/id6746719684',
   },
   // Client Projects - CLI
   {

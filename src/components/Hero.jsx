@@ -36,7 +36,7 @@ const Hero = () => {
           <motion.div variants={itemVariants} className="mb-6 flex justify-center">
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 p-1 shadow-lg overflow-hidden">
               <img
-                src="/profile-photo.jpg"
+                src="/Portfolio/profile-photo.jpg"
                 alt="Ashish Pipaliya"
                 className="w-full h-full object-cover rounded-full"
                 onError={e => {
@@ -72,8 +72,8 @@ const Hero = () => {
             className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
           >
             React Native Developer with over 2.5 years of experience building high-performance
-            mobile apps. I've developed 15+ projects, including well-known brands like GNC, Kalki,
-            Vilvah, and Bellavita.
+            mobile apps. I've developed 15+ projects, including well-known brands like GNC,
+            Bellavita, BSC, and RENEE.
           </motion.p>
 
           <motion.div

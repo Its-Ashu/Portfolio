@@ -14,10 +14,10 @@ const About = () => {
         <div className="prose prose-lg dark:prose-invert max-w-none">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
             I'm a React Native Developer with over 2.5 years of experience building high-performance
-            mobile apps. I've developed 15+ projects, including well-known brands like GNC, Kalki,
-            Vilvah, and Bellavita. Skilled in React Native, JavaScript, TypeScript, Redux, Firebase,
-            and MERN, I focus on crafting clean designs, smooth user experiences, and reliable app
-            functionality.
+            mobile apps. I've developed 15+ projects, including well-known brands like GNC,
+            Bellavita, BSC, and RENEE. Skilled in React Native, JavaScript, TypeScript, Redux,
+            Firebase, and MERN, I focus on crafting clean designs, smooth user experiences, and
+            reliable app functionality.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
             My expertise spans full-stack mobile development, from building responsive UIs with
@@ -29,7 +29,7 @@ const About = () => {
             I'm passionate about creating seamless user experiences and have been recognized for
             clean UI implementation and efficient debugging. When I'm not coding, I'm constantly
             learning about new technologies and contributing to projects that make a positive impact
-            on users' lives.
+            on user's lives.
           </p>
         </div>
       </motion.div>

@@ -15,6 +15,24 @@ const ProjectDetail = () => {
     setCurrentIndex(index)
     setIsOpen(true)
   }
+  const location = useLocation()
+
+  const handleBackToProjects = () => {
+    const targetId = '#projects'
+
+    if (location.pathname !== '/') {
+      navigate('/')
+
+      // wait for home to render
+      setTimeout(() => {
+        const el = document.querySelector(targetId)
+        el?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      const el = document.querySelector(targetId)
+      el?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   const closeLightbox = () => setIsOpen(false)
 
@@ -49,8 +67,8 @@ const ProjectDetail = () => {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back Button */}
-        <Link
-          to="/"
+        <button
+          onClick={() => handleBackToProjects()}
           className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mb-8 transition-colors"
         >
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,7 +80,7 @@ const ProjectDetail = () => {
             />
           </svg>
           Back to Projects
-        </Link>
+        </button>
 
         {/* Hero Image/Carousel */}
         <motion.div
