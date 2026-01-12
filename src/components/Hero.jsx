@@ -38,7 +38,7 @@ const Hero = () => {
               <img
                 src="/Portfolio/profile-photo.jpg"
                 alt="Ashish Pipaliya"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-contain rounded-full"
                 onError={e => {
                   // Fallback to initials if image fails to load
                   e.target.style.display = 'none'
@@ -71,9 +71,9 @@ const Hero = () => {
             variants={itemVariants}
             className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
           >
-            React Native Developer with over 2.5 years of experience building high-performance
+            React Native Developer with over 2.5+ years of experience building high-performance
             mobile apps. I've developed 15+ projects, including well-known brands like GNC,
-            Bellavita, BSC, and RENEE.
+            Bellavita, Kalki, and BSC.
           </motion.p>
 
           <motion.div

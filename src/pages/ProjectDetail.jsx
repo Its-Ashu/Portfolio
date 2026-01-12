@@ -7,7 +7,8 @@ const ProjectDetail = () => {
   const { slug } = useParams()
   const navigate = useNavigate()
   const project = projects.find(p => p.slug === slug)
-
+  const saved = localStorage.getItem('darkMode')
+  const isDarkMode = saved ? JSON.parse(saved) : false
   const [isOpen, setIsOpen] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -242,6 +243,62 @@ const ProjectDetail = () => {
             ))}
           </ul>
         </motion.section>
+
+        {/* App Store Links */}
+        {(project.playStore || project.appStore) && (
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.55 }}
+            className="mb-12"
+          >
+            <h3 className="heading-3 mb-4 text-primary-600 dark:text-primary-400">Download App</h3>
+
+            <div className="flex gap-4">
+              {/* Play Store */}
+              {project.playStore && (
+                <a
+                  href={project.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 hover:scale-105 transition-transform shadow-md"
+                >
+                  <img
+                    src={
+                      isDarkMode
+                        ? '/Portfolio/android-icon-white.png'
+                        : '/Portfolio/android-icon.png'
+                    }
+                    alt="Android App"
+                    className="w-5 h-5 object-contain"
+                  />
+
+                  <span className="font-medium">Play Store</span>
+                </a>
+              )}
+
+              {/* App Store */}
+              {project.appStore && (
+                <a
+                  href={project.appStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-5 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 hover:scale-105 transition-transform shadow-md"
+                >
+                  <img
+                    src={
+                      isDarkMode ? '/Portfolio/apple-icon-white.png' : '/Portfolio/apple-icon.png'
+                    }
+                    alt="iOS App"
+                    className="w-5 h-5 object-contain"
+                  />
+
+                  <span className="font-medium">App Store</span>
+                </a>
+              )}
+            </div>
+          </motion.section>
+        )}
 
         {/* Screenshots */}
         {project?.screenshots && project?.screenshots?.length > 0 && (

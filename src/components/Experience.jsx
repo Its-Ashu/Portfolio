@@ -10,7 +10,7 @@ const Experience = () => {
         'Working on Appmaker.xyz (React-Native based framework) to build and customize mobile applications for multiple large-scale e-commerce brands',
         'Improved UI/UX, performance, and stability across 13+ production mobile apps',
         'Implemented features such as product listing, advanced filters, cart, checkout flows, and payment integrations',
-        'Worked on brands including GNC, Bellavita, BSC, and RENEE',
+        'Worked on brands including GNC, Bellavita, BSC, and Kalki',
         'Integrated third-party services and SDKs such as GoKwik and Zecpay',
         'Collaborated with designers, backend teams, and QA to deliver high-quality releases',
       ],

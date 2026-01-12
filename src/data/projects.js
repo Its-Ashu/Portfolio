@@ -54,8 +54,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
-    playStoreLink: 'https://play.google.com/store/apps/developer?id=GNC+India',
-    appStoreLink: 'https://apps.apple.com/in/app/gnc-india/id6473276654',
+    playStore: 'https://play.google.com/store/apps/details?id=in.guardiannewapp',
+    appStore: 'https://apps.apple.com/in/app/gnc-india/id6473276654',
   },
   {
     slug: 'bombay-shirt',
@@ -104,8 +104,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
-    playStoreLink: 'https://play.google.com/store/apps/details?id=com.coffye.ndufju',
-    appStoreLink: 'https://apps.apple.com/in/app/bombay-shirt-company/id6444273632',
+    playStore: 'https://play.google.com/store/apps/details?id=com.coffye.ndufju',
+    appStore: 'https://apps.apple.com/in/app/bombay-shirt-company/id6444273632',
   },
   {
     slug: 'kalki',
@@ -153,8 +153,8 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
-    playStoreLink: 'https://play.google.com/store/apps/details?id=com.shopgate.android.kalkifash',
-    appStoreLink: 'https://apps.apple.com/in/app/kalki-fashion-online-shopping/id950206786',
+    playStore: 'https://play.google.com/store/apps/details?id=com.shopgate.android.kalkifash',
+    appStore: 'https://apps.apple.com/in/app/kalki-fashion-online-shopping/id950206786',
   },
   {
     slug: 'vilvah',
