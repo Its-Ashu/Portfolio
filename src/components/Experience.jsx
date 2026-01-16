@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       title: 'React Native Developer',
-      company: 'Dynamic Dreamz',
+      company: 'Dynamic Dreamz : A Shopify & Wordpress Web Development Agency',
       period: 'Aug 2024 – Present',
       description: [
         'Working on Appmaker.xyz (React-Native based framework) to build and customize mobile applications for multiple large-scale e-commerce brands',
@@ -20,7 +20,7 @@ const Experience = () => {
       company: 'Sarvagya Softtech',
       period: 'June 2023 – July 2024',
       description: [
-        'Worked as a Full Stack Developer on real client and internal projects over a continuous 14-month period',
+        'Worked as a Full Stack Developer on real client and internal projects',
         'Developed mobile applications using React Native with RESTful APIs',
         'Built backend services using Node.js, Express, and MongoDB for authentication, data handling, and business logic',
         'Designed and implemented clean, responsive UI/UX using Figma and modern frontend practices',
@@ -65,7 +65,7 @@ const Experience = () => {
               <ul className="space-y-2">
                 {exp.description.map((item, idx) => (
                   <li key={idx} className="text-gray-700 dark:text-gray-300 flex items-start">
-                    <span className="text-primary-500 mr-2 mt-1">•</span>
+                    <span className="text-primary-500 mr-2">•</span>
                     <span>{item}</span>
                   </li>
                 ))}

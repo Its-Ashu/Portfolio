@@ -167,7 +167,15 @@ export const projects = [
       'Worked on UI fixes, functional improvements, and performance optimization across the Vilvah e-commerce app.',
     longDescription:
       'Worked on the Vilvah mobile application using Appmaker.xyz and React Native, focusing on fixing UI inconsistencies, resolving functional issues, and improving performance across key screens such as Home, PLP, PDP, Search, Cart, and Checkout to ensure a smooth shopping experience.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: [
+      'Appmaker.xyz',
+      'React Native',
+      'EXPO',
+      'GoKwik',
+      'Firebase',
+      'GraphQL',
+      'Shopify Dashboard',
+    ],
     highlights: [
       'Fixed UI and layout issues across major shopping flows',
       'Resolved functional issues on PDP, Cart, and Checkout',
@@ -212,7 +220,7 @@ export const projects = [
       'Improved UI stability, cart functionality, and performance for the Voyage Eyewear mobile app.',
     longDescription:
       'Worked on the Voyage Eyewear mobile app to fix UI issues, improve cart-related functionality, and optimize performance across Home, Product Listing, Product Detail, Search, and Cart screens.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: [
       'Improved cart and product interaction behavior',
       'Fixed UI spacing and alignment issues',
@@ -256,7 +264,15 @@ export const projects = [
       'Enhanced UI consistency, filters, and performance for the Bellavita Organic mobile app.',
     longDescription:
       'Worked on improving the Bellavita Organic app by fixing UI issues, improving filter behavior, enhancing cart handling, and optimizing performance across all major shopping screens.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: [
+      'Appmaker.xyz',
+      'React Native',
+      'EXPO',
+      'GoKwik',
+      'Firebase',
+      'GraphQL',
+      'Shopify Dashboard',
+    ],
     highlights: [
       'Improved product filter behavior and UI',
       'Fixed cart and PDP-related issues',
@@ -299,7 +315,15 @@ export const projects = [
       'Worked on UI refinements, functional fixes, and performance improvements for the fashion app.',
     longDescription:
       'Contributed to the House of Masaba mobile app by fixing UI issues, improving functional stability, and optimizing performance across product browsing, cart, and checkout screens.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: [
+      'Appmaker.xyz',
+      'React Native',
+      'EXPO',
+      'GoKwik',
+      'Firebase',
+      'GraphQL',
+      'Shopify Dashboard',
+    ],
     highlights: [
       'Fixed UI inconsistencies across fashion product screens',
       'Improved cart and checkout behavior',
@@ -332,7 +356,7 @@ export const projects = [
     shortDescription: 'Improved UI stability and performance for the House of Rare e-commerce app.',
     longDescription:
       'Worked on fixing UI issues and improving performance across the House of Rare mobile app, ensuring smoother browsing and cart interactions.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: [
       'Fixed UI and layout issues',
       'Improved browsing performance',
@@ -366,7 +390,15 @@ export const projects = [
     shortDescription: 'Worked on UI fixes, cart flow improvements, and performance optimization.',
     longDescription:
       'Improved the Renee Cosmetics mobile app by fixing UI issues, resolving cart and checkout problems, and optimizing performance across key shopping screens.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'GoKwik', 'Firebase', 'GraphQL'],
+    techStack: [
+      'Appmaker.xyz',
+      'React Native',
+      'EXPO',
+      'GoKwik',
+      'Firebase',
+      'GraphQL',
+      'Shopify Dashboard',
+    ],
     highlights: [
       'Fixed cart and checkout-related issues',
       'Improved UI consistency',
@@ -399,7 +431,7 @@ export const projects = [
     shortDescription: 'Improved UI reliability and performance for the ThriveCo wellness app.',
     longDescription:
       'Worked on UI and functional improvements across the ThriveCo mobile app, focusing on performance, stability, and smooth product browsing.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: [
       'Fixed UI and functional issues',
       'Improved browsing performance',
@@ -432,7 +464,7 @@ export const projects = [
     shortDescription: 'Worked on UI fixes and performance optimization for the Fashor fashion app.',
     longDescription:
       'Contributed to the Fashor mobile app by fixing UI issues, improving functional behavior, and optimizing performance across shopping flows.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: ['Resolved UI issues', 'Improved performance', 'Enhanced app usability'],
     problem: 'The app required UI and performance improvements.',
     approach: ['Fixed UI bugs', 'Optimized screen rendering'],
@@ -461,7 +493,7 @@ export const projects = [
     shortDescription: 'Improved UI stability and performance for the Super Tails pet products app.',
     longDescription:
       'Worked on fixing UI and functional issues across the Super Tails mobile app, ensuring smoother browsing and cart interactions.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: ['Fixed UI inconsistencies', 'Improved performance', 'Enhanced app stability'],
     problem: 'The app needed better UI reliability and performance.',
     approach: ['Resolved UI issues', 'Optimized app performance'],
@@ -490,7 +522,7 @@ export const projects = [
     shortDescription: 'Worked on UI fixes and performance optimization for the Zouk lifestyle app.',
     longDescription:
       'Contributed to the Zouk mobile app by fixing UI issues, improving functional stability, and optimizing performance across key screens.',
-    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL'],
+    techStack: ['Appmaker.xyz', 'React Native', 'EXPO', 'Firebase', 'GraphQL', 'Shopify Dashboard'],
     highlights: [
       'Fixed UI and layout issues',
       'Improved app performance',
@@ -516,7 +548,7 @@ export const projects = [
   // Client Projects - CLI
   {
     slug: 'midshires',
-    title: 'Midshires B2B',
+    title: 'Midshires Electrical',
     date: '2023',
     role: 'React Native Developer',
     category: 'client',
@@ -524,7 +556,7 @@ export const projects = [
     shortDescription: 'B2B e-commerce platform for wholesale business operations.',
     longDescription:
       'Midshires B2B is a comprehensive business-to-business e-commerce platform designed for wholesale operations. The platform enables businesses to manage inventory, process bulk orders, handle invoicing, and track shipments efficiently.',
-    techStack: ['React Native CLI', 'Redux', 'TanStack Query', 'REST API'],
+    techStack: ['React Native', 'CLI', 'Redux', 'TanStack Query', 'REST API'],
     highlights: [
       'Developed responsive mobile application using React Native CLI',
       'Built complex order management system with bulk processing capabilities',
@@ -552,6 +584,8 @@ export const projects = [
     screenshots: [],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.adventoris.midshires',
+    appStore: 'https://apps.apple.com/in/app/midshires-electrical/id1518872317',
   },
   {
     slug: 'printbind',
@@ -563,7 +597,7 @@ export const projects = [
     shortDescription: 'E-commerce platform for printing and binding services.',
     longDescription:
       'PrintBind International is an e-commerce platform specializing in printing and binding services. The platform allows customers to upload documents, customize printing options, place orders, and track their printing jobs from order to delivery.',
-    techStack: ['React Native CLI', 'Redux', 'Firebase', 'Figma'],
+    techStack: ['React Native', 'CLI', 'TanStack Query', 'Firebase', 'Figma'],
     highlights: [
       'Developed responsive e-commerce mobile application',
       'Built document upload and preview system',
@@ -597,6 +631,7 @@ export const projects = [
     ],
     githubUrl: null,
     liveUrl: null,
+    playStore: 'https://play.google.com/store/apps/details?id=com.printbind',
   },
 
   // Personal Projects
@@ -758,7 +793,7 @@ export const projects = [
       'A full-stack expense tracking app built with React Native and MERN using TypeScript.',
     longDescription:
       'Expense Tracker is a full-stack personal finance management application developed using React Native for the frontend and MERN stack APIs written in TypeScript for the backend. The app helps users record daily expenses, categorize spending, manage budgets, and analyze financial data through a clean and intuitive mobile interface.',
-    techStack: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Firebase'],
+    techStack: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'Express', 'MongoDB'],
     highlights: [
       'Built cross-platform mobile frontend using React Native Expo and TypeScript',
       'Developed RESTful APIs using Node.js, Express, and MongoDB in TypeScript',
