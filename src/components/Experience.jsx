@@ -7,12 +7,12 @@ const Experience = () => {
       company: 'Dynamic Dreamz : A Shopify & Wordpress Web Development Agency',
       period: 'Aug 2024 – Present',
       description: [
-        'Working on Appmaker.xyz (React-Native based framework) to build and customize mobile applications for multiple large-scale e-commerce brands',
-        'Improved UI/UX, performance, and stability across 13+ production mobile apps',
-        'Implemented features such as product listing, advanced filters, cart, checkout flows, and payment integrations',
-        'Worked on brands including GNC, Bellavita, BSC, and Kalki',
-        'Integrated third-party services and SDKs such as GoKwik and Zecpay',
-        'Collaborated with designers, backend teams, and QA to deliver high-quality releases',
+        'Worked on Appmaker.xyz, a React Native–based framework, to build and customize mobile applications for large-scale e-commerce brands',
+        'Enhanced UI/UX, performance, and app stability across 13+ production mobile applications',
+        'Implemented core e-commerce features including product listings, advanced filtering, cart management, checkout flows, and payment integrations',
+        'Delivered and maintained apps for major brands such as GNC, Bellavita, BSC, and Kalki',
+        'Integrated third-party services and SDKs including GoKwik and Zecpay for payments and user experience optimization',
+        'Collaborated cross-functionally with design, backend, and QA teams to ship high-quality, production-ready releases',
       ],
     },
     {

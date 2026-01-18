@@ -18,6 +18,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Education', href: '#education' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
@@ -42,7 +43,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
       }, 100)
     } else {
       const el = document.querySelector(targetId)
-      el?.scrollIntoView({ behavior: 'instant' })
+      el?.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
