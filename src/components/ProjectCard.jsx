@@ -1,13 +1,27 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const ProjectCard = ({ project }) => {
-  // Use project image or fallback to gradient with first letter
   const hasImage = project.image
   const backgroundColor = project.backgroundColor ?? null
   const isLogo = project.isLogo ?? false
+  const [darkMode, setDarkMode] = useState(document.documentElement.classList.contains('dark'))
 
-  // Determine background style
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setDarkMode(document.documentElement.classList.contains('dark'))
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   const backgroundStyle = backgroundColor
     ? { backgroundColor }
     : {
@@ -20,10 +34,51 @@ const ProjectCard = ({ project }) => {
         whileHover={{ y: -5 }}
         className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden h-full flex flex-col hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700"
       >
+        {/* Image Section */}
         <div
-          className="h-48 flex items-center justify-center overflow-hidden"
+          className="h-48 flex items-center justify-center overflow-hidden relative"
           style={backgroundStyle}
         >
+          {/* Store Icons */}
+          {(project.playStore || project.appStore) && (
+            <div className="absolute top-3 right-3 flex gap-2 z-10">
+              {project.playStore && (
+                <a
+                  href={project.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={e => e.stopPropagation()}
+                  className="bg-white/90 dark:bg-gray-900/90 p-2 rounded-full shadow hover:scale-105 transition-transform"
+                >
+                  <img
+                    src={
+                      darkMode ? '/Portfolio/android-icon-white.png' : '/Portfolio/android-icon.png'
+                    }
+                    alt="Play Store"
+                    className="w-4 h-4 object-contain"
+                  />
+                </a>
+              )}
+
+              {project.appStore && (
+                <a
+                  href={project.appStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={e => e.stopPropagation()}
+                  className="bg-white/90 dark:bg-gray-900/90 p-2 rounded-full shadow hover:scale-105 transition-transform"
+                >
+                  <img
+                    src={darkMode ? '/Portfolio/apple-icon-white.png' : '/Portfolio/apple-icon.png'}
+                    alt="App Store"
+                    className="w-4 h-4 object-contain"
+                  />
+                </a>
+              )}
+            </div>
+          )}
+
+          {/* Project Image */}
           {hasImage ? (
             <img
               src={project.image}
@@ -33,7 +88,6 @@ const ProjectCard = ({ project }) => {
               }
               loading="lazy"
               onError={e => {
-                // Fallback to gradient if image fails to load
                 e.target.style.display = 'none'
                 const parent = e.target.parentElement
                 if (!backgroundColor) {
@@ -53,6 +107,8 @@ const ProjectCard = ({ project }) => {
             </div>
           )}
         </div>
+
+        {/* Content */}
         <div className="p-6 flex-grow flex flex-col">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{project.title}</h3>
@@ -62,9 +118,11 @@ const ProjectCard = ({ project }) => {
               </span>
             )}
           </div>
+
           <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow text-sm">
             {project.shortDescription}
           </p>
+
           <div className="flex flex-wrap gap-2 mb-4">
             {project.techStack.slice(0, 3).map(tech => (
               <span
@@ -80,6 +138,7 @@ const ProjectCard = ({ project }) => {
               </span>
             )}
           </div>
+
           <div className="text-primary-600 dark:text-primary-400 font-medium text-sm flex items-center">
             View Details
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

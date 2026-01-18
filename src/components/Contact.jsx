@@ -41,7 +41,11 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto"
       >
-        <h2 className="heading-2 mb-12 text-center">Get In Touch</h2>
+        <h2 className="heading-2 mb-6 text-center">Get In Touch</h2>
+        {/* Trust / Intent Line */}
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
+          Looking for a React Native Developer? Let’s build something great together.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <motion.div

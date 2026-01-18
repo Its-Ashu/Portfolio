@@ -25,7 +25,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
+    <section className="min-h-[90vh] flex items-center justify-center pt-16 bg-gradient-to-br from-primary-50 via-white to-primary-50/50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800">
       <div className="section-container">
         <motion.div
           variants={containerVariants}
@@ -40,7 +40,6 @@ const Hero = () => {
                 alt="Ashish Pipaliya"
                 className="w-full h-full object-contain rounded-full"
                 onError={e => {
-                  // Fallback to initials if image fails to load
                   e.target.style.display = 'none'
                   const parent = e.target.parentElement
                   parent.innerHTML = `
@@ -62,18 +61,17 @@ const Hero = () => {
 
           <motion.p
             variants={itemVariants}
-            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 font-medium"
+            className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-6 font-medium"
           >
-            Building high-performance mobile experiences with React Native
+            React Native Developer building scalable, production-ready mobile apps
           </motion.p>
 
           <motion.p
             variants={itemVariants}
-            className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
+            className="text-lg text-gray-500 dark:text-gray-400 mb-10 max-w-2xl mx-auto"
           >
-            React Native Developer with over 2.5+ years of experience building high-performance
-            mobile apps. I've developed 15+ projects, including well-known brands like GNC,
-            Bellavita, Kalki, and BSC.
+            I help businesses and startups turn ideas into fast, reliable mobile applications using
+            React Native and modern tech stacks.
           </motion.p>
 
           <motion.div
@@ -87,6 +85,14 @@ const Hero = () => {
               Get In Touch
             </a>
           </motion.div>
+
+          {/* Trust Line */}
+          <motion.p
+            variants={itemVariants}
+            className="mt-6 text-sm text-gray-500 dark:text-gray-400"
+          >
+            2.5+ years experience • 15+ real-world projects • React Native & MERN
+          </motion.p>
         </motion.div>
       </div>
     </section>

@@ -7,12 +7,12 @@ const Experience = () => {
       company: 'Dynamic Dreamz : A Shopify & Wordpress Web Development Agency',
       period: 'Aug 2024 – Present',
       description: [
-        'Worked on Appmaker.xyz, a React Native–based framework, to build and customize mobile applications for large-scale e-commerce brands',
-        'Enhanced UI/UX, performance, and app stability across 13+ production mobile applications',
-        'Implemented core e-commerce features including product listings, advanced filtering, cart management, checkout flows, and payment integrations',
-        'Delivered and maintained apps for major brands such as GNC, Bellavita, BSC, and Kalki',
-        'Integrated third-party services and SDKs including GoKwik and Zecpay for payments and user experience optimization',
-        'Collaborated cross-functionally with design, backend, and QA teams to ship high-quality, production-ready releases',
+        'Built and customized production-grade mobile applications using Appmaker.xyz, a React Native–based framework, for large-scale e-commerce brands',
+        'Delivered and maintained 13+ production mobile apps used by real customers across multiple domains',
+        'Implemented end-to-end e-commerce flows including product listings, advanced filtering, cart management, checkout, and payment integrations',
+        'Improved app performance and stability by up to ~30% through optimized rendering, API handling, and bug fixes',
+        'Integrated third-party SDKs and services such as GoKwik and Zecpay to enhance payments and user experience',
+        'Collaborated closely with design, backend, and QA teams to ship scalable, high-quality releases on tight timelines',
       ],
     },
     {
@@ -20,11 +20,11 @@ const Experience = () => {
       company: 'Sarvagya Softtech',
       period: 'June 2023 – July 2024',
       description: [
-        'Worked as a Full Stack Developer on real client and internal projects',
-        'Developed mobile applications using React Native with RESTful APIs',
-        'Built backend services using Node.js, Express, and MongoDB for authentication, data handling, and business logic',
-        'Designed and implemented clean, responsive UI/UX using Figma and modern frontend practices',
-        'Gained hands-on experience with Git-based version control, debugging, and API integration.',
+        'Worked as a Full Stack Developer on real client and internal projects across mobile and web platforms',
+        'Developed React Native applications with RESTful API integration and focus on clean UI/UX',
+        'Built and maintained backend services using Node.js, Express, and MongoDB for authentication, data management, and business logic',
+        'Designed responsive and user-friendly interfaces using Figma, translating designs into functional components',
+        'Gained hands-on experience with Git-based version control, debugging, API integration, and end-to-end feature development',
       ],
     },
   ]
@@ -39,6 +39,7 @@ const Experience = () => {
         className="max-w-4xl mx-auto"
       >
         <h2 className="heading-2 mb-12 text-center">Experience</h2>
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <motion.div
@@ -62,6 +63,7 @@ const Experience = () => {
                   {exp.period}
                 </p>
               </div>
+
               <ul className="space-y-2">
                 {exp.description.map((item, idx) => (
                   <li key={idx} className="text-gray-700 dark:text-gray-300 flex items-start">
