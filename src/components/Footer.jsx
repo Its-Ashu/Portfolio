@@ -12,7 +12,7 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6">
             <a
-              href="https://linkedin.com/in/ashishpipaliya"
+              href="https://www.linkedin.com/in/ashish-pipaliya-b0716730b/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary-400 transition-colors"
@@ -23,7 +23,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://github.com/ashishpipaliya"
+              href="https://github.com/Its-Ashu"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary-400 transition-colors"
