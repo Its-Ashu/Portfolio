@@ -91,7 +91,7 @@ const Hero = () => {
             variants={itemVariants}
             className="mt-6 text-sm text-gray-500 dark:text-gray-400"
           >
-            2.5+ years experience • 15+ real-world projects • React Native & MERN
+            3 years experience • 15+ real-world projects • React Native & MERN
           </motion.p>
         </motion.div>
       </div>

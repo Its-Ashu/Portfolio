@@ -19,7 +19,7 @@ const About = () => {
             <span className="font-medium text-primary-600 dark:text-primary-400">
               React Native Developer
             </span>{' '}
-            with 2.5+ years of hands-on experience building scalable, high-performance mobile
+            with 3 years of hands-on experience building scalable, high-performance mobile
             applications for real-world use.
           </p>
 
