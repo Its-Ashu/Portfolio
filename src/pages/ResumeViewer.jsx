@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ResumeViewer = () => {
   // Use BASE_URL for GitHub Pages compatibility
-  const resumePath = `${import.meta.env.BASE_URL}AshishPipaliya_ReactNativeDev_Resume.pdf`
+  const resumePath = `${import.meta.env.BASE_URL}AshishPipaliya_ReactNative_Resume.pdf`
 
   return (
     <motion.div
@@ -31,7 +31,7 @@ const ResumeViewer = () => {
           </Link>
           <a
             href={resumePath}
-            download="AshishPipaliya_Resume.pdf"
+            download="AshishPipaliya_ReactNative_Resume.pdf"
             className="btn-primary inline-flex items-center"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,7 +42,7 @@ const ResumeViewer = () => {
                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
               />
             </svg>
-            Download CV
+            Download Resume
           </a>
         </div>
 

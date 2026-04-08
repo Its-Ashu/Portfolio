@@ -48,12 +48,12 @@ const Header = ({ darkMode, toggleDarkMode }) => {
   }
 
   // Use BASE_URL for GitHub Pages compatibility
-  const resumePath = `${import.meta.env.BASE_URL}AshishPipaliya_ReactNativeDev_Resume.pdf`
+  const resumePath = `${import.meta.env.BASE_URL}AshishPipaliya_ReactNative_CV.pdf`
 
   const downloadResume = () => {
     const link = document.createElement('a')
     link.href = resumePath
-    link.download = 'AshishPipaliya_Resume.pdf'
+    link.download = 'AshishPipaliya_CV.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
