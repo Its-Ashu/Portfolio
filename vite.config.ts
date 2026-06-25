@@ -5,7 +5,19 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "/Portfolio/",
-  plugins: [tailwindcss(), tanstackStart(), viteReact()],
+  plugins: [
+    tailwindcss(),
+    tanstackStart({
+      spa: {
+        enabled: true,
+        prerender: {
+          outputPath: "/index.html",
+          crawlLinks: false,
+        },
+      },
+    }),
+    viteReact(),
+  ],
   resolve: {
     alias: {
       "@": `${process.cwd()}/src`,
